@@ -90,7 +90,7 @@ void d_knn_12(
 
 void cukdtree_build(int numPoints, void* points)
 {
-	cukd::buildTree_thrust((float3*)points, numPoints);
+	cukd::buildTree((float3*)points, numPoints);
 	CUKD_CUDA_SYNC_CHECK();
 }
 
