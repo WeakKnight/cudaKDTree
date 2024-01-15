@@ -119,6 +119,11 @@ target_include_directories(cudaKDTree INTERFACE
   ${PROJECT_SOURCE_DIR}/
   )
 
+# ==================================================================
+# libcukdtree
+# ==================================================================
+add_library(libcukdtree SHARED libcukdtree.cu)
+target_link_libraries(libcukdtree cudaKDTree)
 
 # ================================================================== a
 # simple sample example of how to build a k-d tree
