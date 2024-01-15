@@ -30,4 +30,5 @@ Session.vim
 .idea
 !*png/*.pdf
 .vs/
+Build/
 
